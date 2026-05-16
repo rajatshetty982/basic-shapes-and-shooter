@@ -69,9 +69,10 @@ void Game::init(const std::string &path)
 
 	if (!m_font.loadFromFile(m_fontPath))
 	{
-		fprintf(stderr, "failed at loading font from a file"); // i am annoyed by googling everything, so instead of looking for how c++ put an error out i used c style. not sorry!
+		fprintf(stderr, "failed at loading font from a file");
 		exit(1);
 	}
+	
 	// defaults for the score
 	m_scoreText.setFont(m_font);
 	m_scoreText.setCharacterSize(m_fontSize);
